@@ -74,7 +74,7 @@ const MainScreen = () => {
       >
         <SectionTitle>What's on your mind?</SectionTitle>
 
-        {requiredPostFields.map((field) => (
+        {requiredPostFields?.map((field) => (
           <div className="mt-[19px] flex flex-col" key={field.name}>
             <p className="mt-[8px]">{field.name}</p>
             <Input

@@ -29,7 +29,7 @@ function EditModal({ onChange, closeModal, onSubmit, disabled }: Props) {
         <form className="modal-content px-6 py-4 text-left" onSubmit={onSubmit}>
           <SectionTitle>Edit item</SectionTitle>
 
-          {requiredPostFields.map((field) => (
+          {requiredPostFields?.map((field) => (
             <div className="mt-[19px] flex flex-col" key={field.name}>
               <p className="mt-[8px]">{field.name}</p>
               <Input
