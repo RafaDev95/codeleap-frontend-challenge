@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <link rel="icon" href="/icons/code-leap.png" />
+      <title>RD95-CL Challenge</title>
       <body>
         <Main />
         <NextScript />
