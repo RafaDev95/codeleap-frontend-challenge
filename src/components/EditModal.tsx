@@ -42,7 +42,7 @@ function EditModal({ onChange, closeModal, onSubmit, disabled }: Props) {
 
           <div className="ml-auto flex w-[220px]">
             <Button
-              className="border border-text-secondary bg-transparent text-black hover:bg-slate-100"
+              className="border border-text-secondary bg-transparent text-gray-900 hover:bg-slate-100"
               onClick={closeModal}
             >
               Cancel
