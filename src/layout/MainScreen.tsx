@@ -55,6 +55,11 @@ const MainScreen = () => {
     toast.success('Successfully created')
   }
 
+  const handleLogOut = () => {
+    localStorage.removeItem('codeLeap-username')
+    window.location.reload()
+  }
+
   return (
     <main className="h-max w-[800px] bg-white">
       <Toaster position="top-center" reverseOrder={false} />
@@ -72,7 +77,10 @@ const MainScreen = () => {
           })
         }
       >
-        <SectionTitle>What's on your mind?</SectionTitle>
+        <div className="flex">
+          <SectionTitle>What's on your mind?</SectionTitle>
+          <Button onClick={handleLogOut}>LogOut</Button>
+        </div>
 
         {requiredPostFields?.map((field) => (
           <div className="mt-[19px] flex flex-col" key={field.name}>
@@ -94,7 +102,7 @@ const MainScreen = () => {
         </Button>
       </form>
 
-      {postsForMapping?.results.map((post) => (
+      {postsForMapping?.results?.map((post) => (
         <PostComponent key={post.id} post={post} />
       ))}
     </main>

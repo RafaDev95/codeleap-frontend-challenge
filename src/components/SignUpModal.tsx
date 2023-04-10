@@ -8,8 +8,10 @@ import { saveUserName } from 'redux/slices/authSlice'
 const SignUpModal = () => {
   const [userName, setUserName] = useState('')
   const dispatch = useAppDispatch()
-  const handleChange = () => {
+  const handleChange = (e: any) => {
+    e.preventDefault()
     dispatch(saveUserName({ userName }))
+    window.location.reload()
   }
   return (
     <div
