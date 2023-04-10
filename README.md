@@ -1,38 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Informações sobre o projeto:
 
-## Getting Started
+## Avisos Importantes:
 
-First, run the development server:
+- No momento, o nome do usuário está sendo armazenado no local storage. Mas com o redux, fica MUITO fácil de escalar e usar métodos mais robustos.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Deletar e Editar Postagens: Estou recebendo erro de cors e por isso coloquei pop-up com uma mensagem informando. Mas mesmo assim, as funçõe estão lá e caso seja liberado, crio que funcionarão.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias usadas:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+    -NextJs
+    -TailwindCss
+    -Typescript
+    -Redux Toolkit
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Estrutudas de pastas:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    Src:
+        /actions/requests: Todas das requisições http;
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+        /components: Componentes reutilizáveis;
 
-## Learn More
+        /layout: Busco deixar componentes que são fixos em todas as páginas para não precisar ficar repetindo-os sempre;
 
-To learn more about Next.js, take a look at the following resources:
+        /pages: Todas as páginas e os arquivos necessários para funcionamento das mesma, exigidos pelo nextjs;
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+        /redux: Tudo relacionado ao redux toolkit
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+        /styles: Estilos e configurações dos mesmo;
 
-## Deploy on Vercel
+        /types: Tipos e interfaces do typescript
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Funcionando o projeto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone o projeto: `git clone https://github.com/RafaDev95/codeleap-frontend-challenge.git`;
+2. Use o comando `yarn` para instalar as depedências;
+3. E por último `yarn dev`.
+
+# Link para o projeto online: [🔗 RD 95 - FrontEnd](https://codeleap-frontend-challenge.vercel.app/)
